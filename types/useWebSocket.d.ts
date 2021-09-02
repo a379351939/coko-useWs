@@ -10,5 +10,5 @@ interface Opt {
     reconnectDelay?: number;
     reconnectTime?: number;
 }
-declare function useWs(url: string, opt?: Opt): Res;
-export default useWs;
+declare function useWebSocket(url: string, opt?: Opt): Res;
+export default useWebSocket;
