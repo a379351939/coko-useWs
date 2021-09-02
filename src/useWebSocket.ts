@@ -15,13 +15,13 @@ interface Opt {
 }
 
 
-function useWs(url:string, opt:Opt = {}):Res {
+function useWebSocket(url:string, opt:Opt = {}):Res {
   const { onMessage,
           onOpen,
           onClose,
           onError,
           reconnectDelay = 3000,
-          reconnectTime = 1,
+          reconnectTime = 3,
         } = opt
 
   const wsRef = useRef<WebSocket>()
@@ -92,4 +92,4 @@ function useWs(url:string, opt:Opt = {}):Res {
   return { newMsg, sendMsg }
 }
 
-export default useWs
+export default useWebSocket

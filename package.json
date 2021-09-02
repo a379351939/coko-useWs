@@ -1,5 +1,5 @@
 {
-  "name": "coko-usews",
+  "name": "coko-usewebsocket",
   "version": "0.0.1",
   "files": ["dist","types"],
   "main": "./dist/index.es.js",

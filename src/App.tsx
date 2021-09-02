@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react'
 import ReactDOM from 'react-dom'
-import useWs from './useWs'
+import useWebSocket from './useWebSocket'
 
 function App(){
-  const { sendMsg, newMsg } = useWs('wss://ai-api.daikin.net.cn/wss-ias-log')
+  const { sendMsg, newMsg } = useWebSocket('wss://ai-api.daikin.net.cn/wss-ias-log')
   useEffect(()=>{
     console.log('test');
     sendMsg('haha')

@@ -1,3 +1,3 @@
-import CokoUseWs from "./useWs";
+import cokoUseWebSocket from "./useWebSocket";
 
-export default CokoUseWs
+export default cokoUseWebSocket
