@@ -1,6 +1,18 @@
 {
   "name": "coko-usews",
   "version": "0.0.1",
+  "files": ["dist","types"],
+  "main": "./dist/index.es.js",
+  "types": "./types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a379351939/coko-useWs.git"
+  },
+  "author": "tzc",
+  "license": "MIT",
+  "keywords": [
+    "React"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
