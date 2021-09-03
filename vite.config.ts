@@ -5,7 +5,7 @@ module.exports = defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
-      name: 'CokoFlv',
+      name: 'CokoUseWebsocket',
       formats: ["es"],
       fileName: "index",
     },

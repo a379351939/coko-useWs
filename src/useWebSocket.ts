@@ -44,7 +44,6 @@ function useWebSocket(url:string, opt:Opt = {}):Res {
 
     wsIns.onerror = (e) => {
       onError && onError(e)
-      console.log('error');
       reconnect()
     }
 
@@ -55,7 +54,6 @@ function useWebSocket(url:string, opt:Opt = {}):Res {
 
     wsIns.onclose = (e) => {
       onClose && onClose(e)
-      console.log('error');
       reconnect()
     }
   }
@@ -64,7 +62,6 @@ function useWebSocket(url:string, opt:Opt = {}):Res {
     if(wsRef.current?.readyState !== 1 && reconnectCountRef.current < reconnectTime) {
       reconnectTimerRef.current && clearTimeout(reconnectTimerRef.current)
       reconnectTimerRef.current = window.setTimeout(()=>{
-        console.log(reconnectCountRef.current);
         init()
         reconnectCountRef.current++
       },reconnectDelay)
